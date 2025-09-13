@@ -181,8 +181,8 @@ If you use this code in your research, please cite:
 ```bibtex
 @misc{autonomous-driving-rl-interpretability,
   title={Interpretability in Autonomous Driving: Visual Attribution Analysis of RL Agents},
-  author={Your Name},
-  year={2024},
+  author={Anubhav Paras},
+  year={2025},
   url={https://github.com/yourusername/autonomous-driving-rl-interpretability}
 }
 ```
